@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_films">
+
+    <fragment
+        android:id="@+id/nav_films"
+        android:name="com.example.celluloid.ui.board.FilmsFragment"
+        android:label="@string/menu_films"
+        tools:layout="@layout/fragment_films" />
+
+    <fragment
+        android:id="@+id/nav_poster"
+        android:name="com.example.celluloid.ui.board.PosterFragment"
+        tools:layout="@layout/fragment_poster" />
+
+    <fragment
+        android:id="@+id/nav_starred"
+        android:name="com.example.celluloid.ui.board.StarredFragment"
+        android:label="@string/menu_starred"
+        tools:layout="@layout/fragment_starred" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.celluloid.ui.board.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
+
+</navigation>
